@@ -1,1 +1,2 @@
-console.log('hi?')
+import { recordable } from './store'
+export default recordable
