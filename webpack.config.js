@@ -4,9 +4,11 @@ const path = require('path')
 module.exports = {
     entry: './dist/index.js',
     output: {
-        path: path.resolve(__dirname, 'umd'),
+        path: path.resolve(__dirname, 'export'),
         filename: 'recordable.js',
         publicPath: './dist',
+        libraryTarget: 'umd',
+        libraryExport: 'default'
     },
     mode: 'production',
     optimization: {
